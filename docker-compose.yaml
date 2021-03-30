@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  skywire-uptime-tracker:
+    container_name: uptime-tracker
+    build:
+      context: .
+    image: "inigohu/skywire-uptime-tracker:v0.0.1"
+    command: skywire-uptime-tracker serve
